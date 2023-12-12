@@ -1,4 +1,4 @@
-package com.nopcommerce.propertyreader;
+package com.tutorialninja.propertyreader;
 
 import java.io.FileInputStream;
 import java.util.Properties;
@@ -45,7 +45,7 @@ public class PropertyReader {
         Properties prop = new Properties();
         FileInputStream inputStream = null;
         try {
-            inputStream = new FileInputStream(System.getProperty("user.dir") + "/src/test/java/resources/propertiesfile/config.properties");
+            inputStream = new FileInputStream(System.getProperty("user.dir") + "/src/test/java/propertiesfile/config.properties");
             prop.load(inputStream);
             if (prop.getProperty(propertyName) != null) {
                 return prop.getProperty(propertyName);

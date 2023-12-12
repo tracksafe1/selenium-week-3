@@ -1,7 +1,7 @@
-package com.nopcommerce.utility;
+package com.tutorialninja.utility;
 
 import com.google.common.base.Function;
-import com.nopcommerce.driverfactory.ManageDriver;
+import com.tutorialninja.driverfactory.ManageDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -87,6 +87,10 @@ public class Utility extends ManageDriver {
         WebElement dropDown = driver.findElement(by);
         Select select = new Select(dropDown);
         select.selectByVisibleText(text);
+    }
+    //clear text field
+    public void clearTextField(By by) {
+        driver.findElement(by).clear();
     }
 
     /**

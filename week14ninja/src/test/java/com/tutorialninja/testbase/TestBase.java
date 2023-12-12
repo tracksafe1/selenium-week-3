@@ -1,7 +1,7 @@
-package com.nopcommerce.testbase;
+package com.tutorialninja.testbase;
 
-import com.nopcommerce.propertyreader.PropertyReader;
-import com.nopcommerce.utility.Utility;
+import com.tutorialninja.propertyreader.PropertyReader;
+import com.tutorialninja.utility.Utility;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -16,7 +16,8 @@ public class TestBase extends Utility {
 
     @AfterMethod
     public void tearDown(){
-      closeBrowser();
+
+//        closeBrowser();
     }
 
 
